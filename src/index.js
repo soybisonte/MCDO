@@ -45,10 +45,5 @@ Array.from({ length: 1000 }).forEach(() => {
 });
 
 const json = JSON.stringify(USERS);
-console.log(json)
+// console.log(json)
 
-require('fs').writeFile('./datasets/profiles.json', JSON.stringify(USERS), (error) => {
-  if (error) {
-      throw error;
-  }
-});
