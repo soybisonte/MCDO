@@ -12,7 +12,8 @@
     "format": "prettier --write \"src/**/*.js\"",
     "format:check": "prettier --list-different \"src/**/*.js\"",
     "lint": "eslint \"src/**/*.js\"",
-    "lint:fix": "eslint --fix \"src/**/*.js\""
+    "lint:fix": "eslint --fix \"src/**/*.js\"",
+    "datagen": "npm run build && node ./build/datagen.js"
   },
   "repository": "github:vferdiansyah/nodejs-es6-boilerplate",
   "keywords": [
@@ -43,7 +44,9 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
+    "danfojs-node": "^1.1.1",
     "fs": "^0.0.1-security",
+    "json-2-csv": "^3.17.2",
     "jsonexport": "^3.2.0",
     "simple-simplex": "^1.0.1"
   }
